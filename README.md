@@ -1,10 +1,10 @@
 # kafka-connector
 
-## Introduction
+This Connector exposes APIs to intracts with Apacahe Kafka Cluster which can be integrated into WaveMaker Application.
+
+## Kafka Introduction
 Apache Kafka is a distributed publish-subscribe messaging system.Kafka is fast, scalable, durable, fault-tolerant and distributed messaging system by design.
 It was originally developed by Linked later it became of part of Apache project.
-
-This Connector will enable seamless integration with kafka cluster in WaveMaker application
 
 ## Kafka Fundamentals
 
