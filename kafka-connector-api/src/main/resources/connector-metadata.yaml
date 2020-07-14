@@ -1,0 +1,4 @@
+version: "1.0"
+name: "kafka"
+description: "This connector is used to publish and receive messages through kafka distributed messaging framework"
+springConfigurationClass: "com.wavemaker.connector.kafka.configuration.KafkaConnectorConfiguration"
