@@ -92,9 +92,6 @@ kafkaConsumer.start(topicName, new KafkaConsumerCallback<Integer, String>() {
 Apart from above apis, there are other apis in each connector interface, please visit connector interfaces in the kafka-api module.
 
 
-## Conclusion
-Using Kafka-Connector in the WaveMaker application, it is provides an easy apis to interact with Kafka cluster.
-
 
 
 

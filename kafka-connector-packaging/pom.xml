@@ -28,7 +28,6 @@
             <plugin>
                 <groupId>com.wavemaker.connector.build</groupId>
                 <artifactId>wavemaker-connector-build-maven-plugin</artifactId>
-                <version>9.9.9</version>
                 <configuration>
                     <connectorId>kafka</connectorId>
                 </configuration>
