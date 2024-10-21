@@ -6,7 +6,7 @@
 
     <groupId>com.wavemaker.connector</groupId>
     <artifactId>kafka-connector</artifactId>
-    <version>1.0</version>
+    <version>2.0</version>
 
     <modules>
         <module>kafka-connector-api</module>
@@ -18,15 +18,16 @@
     <name>kafka-connector</name>
 
     <properties>
-        <wavemaker-version>10.5.3.9077</wavemaker-version>
+        <wavemaker-version>11.9.0</wavemaker-version>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
     </properties>
-
 
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>com.wavemaker.runtime</groupId>
-                <artifactId>wavemaker-app-runtime-services</artifactId>
+                <groupId>com.wavemaker.app</groupId>
+                <artifactId>wavemaker-app-dependencies</artifactId>
                 <version>${wavemaker-version}</version>
                 <scope>import</scope>
                 <type>pom</type>
@@ -39,11 +40,6 @@
             <dependency>
                 <groupId>com.wavemaker.runtime.connector</groupId>
                 <artifactId>wavemaker-app-runtime-connector-impl</artifactId>
-                <version>${wavemaker-version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.wavemaker.connector.build</groupId>
-                <artifactId>wavemaker-connector-build-maven-plugin</artifactId>
                 <version>${wavemaker-version}</version>
             </dependency>
             <dependency>
@@ -62,17 +58,11 @@
                 <version>2.2.3.RELEASE</version>
             </dependency>
             <dependency>
-                <groupId>ch.qos.logback</groupId>
-                <artifactId>logback-classic</artifactId>
-                <scope>test</scope>
-                <version>1.2.3</version>
-            </dependency>
-            <dependency>
                 <groupId>junit</groupId>
                 <artifactId>junit</artifactId>
-                <version>4.13</version>
+                <version>4.13.1</version>
+                <scope>test</scope>
             </dependency>
-
         </dependencies>
     </dependencyManagement>
 
@@ -81,11 +71,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.5.1</version>
-                <configuration>
-                    <source>8</source>
-                    <target>8</target>
-                </configuration>
+                <version>3.13.0</version>
             </plugin>
         </plugins>
     </build>
